@@ -1,0 +1,290 @@
+SUPPLIERS = [
+    {
+        "supplier_id": "SUP-001",
+        "name": "Nova Semiconductor",
+        "country": "Taiwan",
+        "tier": 1,
+        "reliability_score": 94.5,
+    },
+    {
+        "supplier_id": "SUP-002",
+        "name": "Bharat Electronics Supply",
+        "country": "India",
+        "tier": 1,
+        "reliability_score": 91.2,
+    },
+    {
+        "supplier_id": "SUP-003",
+        "name": "Pacific Battery Systems",
+        "country": "Japan",
+        "tier": 1,
+        "reliability_score": 96.1,
+    },
+    {
+        "supplier_id": "SUP-004",
+        "name": "Shenzhen Display Works",
+        "country": "China",
+        "tier": 1,
+        "reliability_score": 88.7,
+    },
+    {
+        "supplier_id": "SUP-005",
+        "name": "Euro Sensor Technologies",
+        "country": "Germany",
+        "tier": 2,
+        "reliability_score": 93.4,
+    },
+    {
+        "supplier_id": "SUP-006",
+        "name": "Korea Memory Systems",
+        "country": "South Korea",
+        "tier": 1,
+        "reliability_score": 95.3,
+    },
+    {
+        "supplier_id": "SUP-007",
+        "name": "Atlas Power Components",
+        "country": "USA",
+        "tier": 2,
+        "reliability_score": 89.6,
+    },
+    {
+        "supplier_id": "SUP-008",
+        "name": "Sakura Optics",
+        "country": "Japan",
+        "tier": 2,
+        "reliability_score": 92.8,
+    },
+    {
+        "supplier_id": "SUP-009",
+        "name": "Indus PCB Manufacturing",
+        "country": "India",
+        "tier": 2,
+        "reliability_score": 90.1,
+    },
+    {
+        "supplier_id": "SUP-010",
+        "name": "Nordic Cooling Solutions",
+        "country": "Sweden",
+        "tier": 2,
+        "reliability_score": 97.0,
+    },
+]
+
+
+COMPONENTS = [
+    {
+        "component_id": "CMP-001",
+        "name": "AI Processor",
+        "category": "Semiconductor",
+        "criticality": "Critical",
+        "unit_cost": 185.0,
+        "lead_time_days": 45,
+    },
+    {
+        "component_id": "CMP-002",
+        "name": "Power Management IC",
+        "category": "Semiconductor",
+        "criticality": "High",
+        "unit_cost": 28.0,
+        "lead_time_days": 30,
+    },
+    {
+        "component_id": "CMP-003",
+        "name": "Lithium Battery Pack",
+        "category": "Battery",
+        "criticality": "Critical",
+        "unit_cost": 72.0,
+        "lead_time_days": 35,
+    },
+    {
+        "component_id": "CMP-004",
+        "name": "OLED Display",
+        "category": "Display",
+        "criticality": "High",
+        "unit_cost": 95.0,
+        "lead_time_days": 28,
+    },
+    {
+        "component_id": "CMP-005",
+        "name": "Temperature Sensor",
+        "category": "Sensor",
+        "criticality": "Medium",
+        "unit_cost": 12.0,
+        "lead_time_days": 14,
+    },
+    {
+        "component_id": "CMP-006",
+        "name": "LPDDR Memory",
+        "category": "Memory",
+        "criticality": "High",
+        "unit_cost": 44.0,
+        "lead_time_days": 25,
+    },
+    {
+        "component_id": "CMP-007",
+        "name": "Power Adapter",
+        "category": "Power",
+        "criticality": "Medium",
+        "unit_cost": 24.0,
+        "lead_time_days": 18,
+    },
+    {
+        "component_id": "CMP-008",
+        "name": "Camera Module",
+        "category": "Optics",
+        "criticality": "High",
+        "unit_cost": 58.0,
+        "lead_time_days": 21,
+    },
+    {
+        "component_id": "CMP-009",
+        "name": "Main PCB",
+        "category": "Electronics",
+        "criticality": "Critical",
+        "unit_cost": 82.0,
+        "lead_time_days": 24,
+    },
+    {
+        "component_id": "CMP-010",
+        "name": "Cooling Module",
+        "category": "Thermal",
+        "criticality": "Medium",
+        "unit_cost": 31.0,
+        "lead_time_days": 20,
+    },
+    {
+        "component_id": "CMP-011",
+        "name": "WiFi Module",
+        "category": "Connectivity",
+        "criticality": "Medium",
+        "unit_cost": 19.0,
+        "lead_time_days": 17,
+    },
+    {
+        "component_id": "CMP-012",
+        "name": "SSD Controller",
+        "category": "Storage",
+        "criticality": "High",
+        "unit_cost": 36.0,
+        "lead_time_days": 26,
+    },
+    {
+        "component_id": "CMP-013",
+        "name": "Fingerprint Sensor",
+        "category": "Sensor",
+        "criticality": "Low",
+        "unit_cost": 9.0,
+        "lead_time_days": 13,
+    },
+    {
+        "component_id": "CMP-014",
+        "name": "USB-C Controller",
+        "category": "Connectivity",
+        "criticality": "Medium",
+        "unit_cost": 14.0,
+        "lead_time_days": 15,
+    },
+    {
+        "component_id": "CMP-015",
+        "name": "Voltage Regulator",
+        "category": "Power",
+        "criticality": "High",
+        "unit_cost": 11.0,
+        "lead_time_days": 22,
+    },
+]
+
+
+PRODUCTS = [
+    {"product_id": "PRD-001", "name": "ApexBook Pro", "category": "Laptop", "launch_status": "Active"},
+    {"product_id": "PRD-002", "name": "ApexBook Air", "category": "Laptop", "launch_status": "Active"},
+    {"product_id": "PRD-003", "name": "VisionPad X", "category": "Tablet", "launch_status": "Active"},
+    {"product_id": "PRD-004", "name": "EdgeStation AI", "category": "Workstation", "launch_status": "Active"},
+    {"product_id": "PRD-005", "name": "SmartHub Mini", "category": "IoT", "launch_status": "Active"},
+    {"product_id": "PRD-006", "name": "VisionPhone Pro", "category": "Smartphone", "launch_status": "Active"},
+    {"product_id": "PRD-007", "name": "EdgeBox Industrial", "category": "Edge Computing", "launch_status": "Pilot"},
+    {"product_id": "PRD-008", "name": "VisionCam AI", "category": "Camera", "launch_status": "Active"},
+]
+
+
+FACTORIES = [
+    {
+        "factory_id": "FAC-001",
+        "name": "Pune Electronics Plant",
+        "country": "India",
+        "capacity_per_month": 60000,
+    },
+    {
+        "factory_id": "FAC-002",
+        "name": "Shenzhen Assembly Center",
+        "country": "China",
+        "capacity_per_month": 110000,
+    },
+    {
+        "factory_id": "FAC-003",
+        "name": "Austin Advanced Manufacturing",
+        "country": "USA",
+        "capacity_per_month": 45000,
+    },
+    {
+        "factory_id": "FAC-004",
+        "name": "Hanoi Technology Plant",
+        "country": "Vietnam",
+        "capacity_per_month": 75000,
+    },
+    {
+        "factory_id": "FAC-005",
+        "name": "Munich Industrial Systems",
+        "country": "Germany",
+        "capacity_per_month": 35000,
+    },
+]
+
+
+REGIONS = [
+    {"region_id": "REG-001", "name": "South Asia", "market_priority": "High"},
+    {"region_id": "REG-002", "name": "East Asia", "market_priority": "High"},
+    {"region_id": "REG-003", "name": "North America", "market_priority": "Critical"},
+    {"region_id": "REG-004", "name": "Europe", "market_priority": "High"},
+    {"region_id": "REG-005", "name": "Middle East", "market_priority": "Medium"},
+]
+
+
+RISK_EVENTS = [
+    {
+        "event_id": "EVT-001",
+        "name": "Taiwan Semiconductor Supply Disruption",
+        "event_type": "Supply Shortage",
+        "severity": "Critical",
+        "status": "Active",
+    },
+    {
+        "event_id": "EVT-002",
+        "name": "Shenzhen Port Congestion",
+        "event_type": "Logistics",
+        "severity": "High",
+        "status": "Active",
+    },
+    {
+        "event_id": "EVT-003",
+        "name": "Pune Plant Power Outage",
+        "event_type": "Facility",
+        "severity": "Medium",
+        "status": "Resolved",
+    },
+    {
+        "event_id": "EVT-004",
+        "name": "Japan Battery Material Shortage",
+        "event_type": "Material Shortage",
+        "severity": "High",
+        "status": "Monitoring",
+    },
+    {
+        "event_id": "EVT-005",
+        "name": "European Transport Strike",
+        "event_type": "Logistics",
+        "severity": "Medium",
+        "status": "Monitoring",
+    },
+]
