@@ -693,7 +693,7 @@ Interactive visualization of the complete CognoDB graph with **48 nodes and 91 r
 
 ## Screen Recording
 
-**Demo video:** `ADD_SCREEN_RECORDING_URL_HERE`
+**Demo video:** https://drive.google.com/file/d/1E-Te-9k2bHVRlHKqBQTwE50tm3HuZNHQ/view?usp=drive_link
 
 Suggested demo flow:
 
@@ -804,7 +804,7 @@ With additional time, ChainSight could be extended with:
 - [x] Final screenshots
 - [x] Hosted frontend
 - [x] Hosted backend
-- [ ] Screen recording
+- [x] Screen recording
 
 ---
 
