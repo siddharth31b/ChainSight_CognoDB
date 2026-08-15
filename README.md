@@ -685,9 +685,9 @@ Interactive visualization of the complete CognoDB graph with **48 nodes and 91 r
 
 ## Hosted Demo
 
-**Live application:** `ADD_DEPLOYED_FRONTEND_URL_HERE`
+**Live application:** https://chainsight-cognodb-wexa.vercel.app
 
-**API:** `ADD_DEPLOYED_BACKEND_URL_HERE`
+**API:** https://chainsight-api-k5sf.onrender.com
 
 ---
 
@@ -802,8 +802,8 @@ With additional time, ChainSight could be extended with:
 - [x] README setup instructions
 - [x] Graph model diagram
 - [x] Final screenshots
-- [ ] Hosted frontend
-- [ ] Hosted backend
+- [x] Hosted frontend
+- [x] Hosted backend
 - [ ] Screen recording
 
 ---
