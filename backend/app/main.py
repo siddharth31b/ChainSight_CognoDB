@@ -1,3 +1,4 @@
+import os
 from contextlib import asynccontextmanager
 
 from fastapi import FastAPI, Request
@@ -7,6 +8,24 @@ from neo4j.exceptions import Neo4jError, ServiceUnavailable
 
 from app.api.routes import router
 from app.db.connection import cognodb
+
+
+def get_allowed_origins() -> list[str]:
+    default_origins = (
+        "http://localhost:5173,"
+        "http://localhost:3000"
+    )
+
+    origins = os.getenv(
+        "CORS_ORIGINS",
+        default_origins,
+    )
+
+    return [
+        origin.strip()
+        for origin in origins.split(",")
+        if origin.strip()
+    ]
 
 
 @asynccontextmanager
@@ -28,10 +47,7 @@ app = FastAPI(
 
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=[
-        "http://localhost:5173",
-        "http://localhost:3000",
-    ],
+    allow_origins=get_allowed_origins(),
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
